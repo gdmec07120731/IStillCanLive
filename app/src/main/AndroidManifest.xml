@@ -27,8 +27,13 @@
             android:theme="@style/pixelTheme" />
 
         <service android:name=".service.JobLiveService" />
+        <!--注册前台服务-->
         <service
             android:name=".service.KeepLiveService"
+            android:process=":live" />
+        <!--注册与前台服务相同notificationId的服务，去掉通知栏-->
+        <service
+            android:name=".service.NotifyService"
             android:process=":live" />
 
         <receiver android:name=".receiver.ScreenLockReceiver" />

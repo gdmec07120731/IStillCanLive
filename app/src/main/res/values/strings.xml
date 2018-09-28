@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">IStillCanLive</string>
+    <string name="open_auto_start">打开自启动</string>
 </resources>
