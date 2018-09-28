@@ -17,16 +17,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PixelActivity"
+        <activity
+            android:name=".PixelActivity"
             android:configChanges="orientation|keyboardHidden"
             android:excludeFromRecents="true"
             android:exported="false"
             android:finishOnTaskLaunch="false"
             android:launchMode="singleInstance"
-            android:theme="@style/pixelTheme"
-            />
+            android:theme="@style/pixelTheme" />
 
         <service android:name=".service.JobLiveService" />
+        <service
+            android:name=".service.KeepLiveService"
+            android:process=":live" />
+
         <receiver android:name=".receiver.ScreenLockReceiver" />
 
     </application>

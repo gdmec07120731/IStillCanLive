@@ -34,12 +34,14 @@ class PixelActivity : AppCompatActivity() {
         var mPixelActivity: PixelActivity? = null
 
         fun showPixelActivity(context: Context) {
+            Log.i("ppjun=", "showPixelActivity")
             val intent = Intent(context, PixelActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             context.startActivity(intent)
         }
 
         fun destroyPixelActivity() {
+            Log.i("ppjun=", "destroyPixelActivity")
             mPixelActivity?.finish()
         }
     }

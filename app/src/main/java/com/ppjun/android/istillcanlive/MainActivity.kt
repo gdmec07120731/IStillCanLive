@@ -15,7 +15,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onDestroy() {
-        super.onDestroy()
         KeepLiveManager().unRegisterBroadcast(this)
+        super.onDestroy()
+
     }
 }

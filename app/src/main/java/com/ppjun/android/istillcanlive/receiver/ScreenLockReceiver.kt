@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import com.ppjun.android.istillcanlive.PixelActivity
+import com.ppjun.android.istillcanlive.manager.KeepLiveManager
 
 
 /**
@@ -14,7 +15,6 @@ class ScreenLockReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context?, intent: Intent) {
         val action = intent.action
-
         when (action) {
             Intent.ACTION_SCREEN_OFF -> {
                 //锁屏的时候
